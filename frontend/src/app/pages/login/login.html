@@ -1,0 +1,31 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-900 relative">
+  <!-- Fondo con gradiente simulando la pantalla de inicio de Netflix -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80 z-0"></div>
+
+  <!-- Tarjeta de Login -->
+  <div class="bg-black/80 p-12 rounded-md w-full max-w-md z-10 flex flex-col shadow-2xl">
+    <h2 class="text-3xl font-bold mb-8 text-white">Inicia sesión</h2>
+    
+    <input type="email" placeholder="Email o número de teléfono" 
+           class="mb-4 p-4 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-600">
+           
+    <input type="password" placeholder="Contraseña" 
+           class="mb-8 p-4 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-600">
+           
+    <button (click)="onLogin()" 
+            class="bg-red-600 text-white p-4 rounded font-bold hover:bg-red-700 transition duration-300">
+      Iniciar sesión
+    </button>
+    
+    <div class="text-gray-400 mt-6 text-sm flex justify-between">
+      <label class="flex items-center cursor-pointer">
+        <input type="checkbox" class="mr-2 accent-gray-500"> Recuérdame
+      </label>
+      <a href="#" class="hover:underline">¿Necesitas ayuda?</a>
+    </div>
+
+    <div class="text-gray-500 mt-8 text-sm">
+      <p>¿Primera vez en Rick & Morty Flix? <a href="#" class="text-white hover:underline">Suscríbete ahora.</a></p>
+    </div>
+  </div>
+</div>

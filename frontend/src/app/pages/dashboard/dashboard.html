@@ -1,0 +1,14 @@
+<div class="p-8">
+  <h1 class="text-4xl font-bold mb-6 text-red-600">Rick & Morty Flix</h1>
+  <h2 class="text-2xl font-semibold mb-4">Episodios Disponibles</h2>
+  
+  <div class="flex overflow-x-auto space-x-4 pb-4">
+    <div *ngFor="let ep of episodes" 
+         (click)="goToEpisode(ep.id)"
+         class="min-w-[250px] bg-gray-800 rounded-md p-4 cursor-pointer hover:scale-105 transition-transform duration-300">
+      <h3 class="text-lg font-bold">{{ ep.name }}</h3>
+      <p class="text-gray-400 text-sm">{{ ep.episode }}</p>
+      <p class="text-xs text-gray-500 mt-2">Emitido: {{ ep.air_date }}</p>
+    </div>
+  </div>
+</div>
